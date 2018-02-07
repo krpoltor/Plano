@@ -1,38 +1,25 @@
 package com.dev.plano.startupTest;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import static org.assertj.core.api.Assertions.assertThat;
 
-/**
- * Unit test for simple App.
- */
-public class StartupTest 
-    extends TestCase
-{
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public StartupTest( String testName )
-    {
-        super( testName );
-    }
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
 
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( StartupTest.class );
-    }
+import com.dev.plano.controller.GreetingsController;
 
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
-    }
+@RunWith(SpringRunner.class)
+@SpringBootTest
+public class StartupTest {
+
+	@Autowired
+    private GreetingsController controller;
+
+	   @Test
+	    public void contexLoads() throws Exception {
+	        assertThat(controller).isNotNull();
+	    }
+
 }
