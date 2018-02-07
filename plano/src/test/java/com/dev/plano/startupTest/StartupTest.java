@@ -1,4 +1,4 @@
-package com.dev.startupTest;
+package com.dev.plano.startupTest;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
