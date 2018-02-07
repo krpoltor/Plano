@@ -1,4 +1,4 @@
-package com.dev.plano;
+package com.dev.startup;
 
 /**
  * Hello world!
