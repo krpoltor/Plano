@@ -1,4 +1,4 @@
-package com.dev.plano.startupTest;
+package com.dev.plano.test.startupTest;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

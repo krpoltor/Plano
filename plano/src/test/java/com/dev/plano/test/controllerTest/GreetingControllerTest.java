@@ -1,4 +1,4 @@
-package com.dev.plano.controllerTest;
+package com.dev.plano.test.controllerTest;
 
 import static org.hamcrest.Matchers.containsString;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
