@@ -14,12 +14,5 @@ import com.dev.plano.controller.GreetingsController;
 @SpringBootTest
 public class StartupTest {
 
-	@Autowired
-    private GreetingsController controller;
-
-	   @Test
-	    public void contexLoads() throws Exception {
-	        assertThat(controller).isNotNull();
-	    }
 
 }
